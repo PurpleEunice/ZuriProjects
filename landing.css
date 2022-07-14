@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 1.15em;
+    color: hsl(192, 100%, 9%);
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    opacity: 0.6;
+}
+
+img{
+    max-width: 100%;
+}
+
+.btn{
+    border-radius: 50px; 
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 60px;
+}
+
+.btn-primary{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+
+.center{
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex > div, .flex > ul { 
+    flex: 1;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+header{
+    background-image: url('./Images/bg-hero-desktop.svg'); 
+    background-size: cover;
+    background-position: center center;
+    background-color: hsl(193, 100%, 96%);
+    padding: 40px 0;
+}
+
+nav{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+.header-img{
+        width: 80%;
+    }
+
+.box{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin: 40px 0;
+    padding: 60px;
+}
+
+.fan{
+    margin-top: 100px;
+}
+
+.small-box{
+    display: inline-block;
+    margin: -50px -100px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.box img{
+    width: 80%;
+}
+
+footer{
+    background-color:  hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 180px 0 60px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: 20px;
+}
+
+footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .circle{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+
+footer p{
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        text-align: center;
+    }
+    nav.flex{
+        flex-direction: row;
+    }
+
+    .header-img{
+        margin-top: 40px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+    .box-reverse-mobile{
+        flex-direction: column-reverse;
+    }
+
+    footer ul{
+        padding: 0;
+        width: 100%;
+    }
+
+    footer p{
+        text-align: center;
+    }
+}
+
