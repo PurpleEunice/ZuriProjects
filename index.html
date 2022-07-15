@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF -8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Learn To Code></title>
+    </head>
 
-    <title>Css flexbox layout</title>
-</head>
+    <body>
 
-<body>
+        <div class="container">
+            <div>
+                <h1>Learn to code by
+                    <br>
+                    watching others</h1>
+                <p>
+                    See how experienced developers solve problem in real-time.
+                    Watching scripted tutorials is great, 
+                    but understanding how developers think is invaluable.
+                </p>
+            </div>
 
-    <header>
-        <nav>
-            <a href="grid.html">Grid layout</a>
-        </nav>
-    </header>
+            <div>
 
-    <main>
-        <div class="box-container">
-            <div class="box box1">
-                <div class="content">
-                    <img src="images/icon-luxury.svg" width="70px">
-                <h1>Sedans</h1>
-                <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
-                <button class="btn btn1">Learn More</button>
+                <div class="box box-blue">
+                    <p>
+                        <strong>Try it free 7 days</strong> then $20/mo.
+                        thereafter
+                    </p>
+                </div>
+
+                    <form class="box" id="form">
+
+                        <div class="input-text">
+                            <input type="text" id="firstname" placeholder="First Name">
+                            <small>First Name cannot be empty</small>
+                            <img src="./images/icon-error.svg" alt="icon-error">
+                        </div>
+
+                        <div class="input-text">
+                            <input type="text" id="lastname" placeholder="Last Name">
+                            <small>Last Name cannot be empty</small>
+                            <img src="./images/icon-error.svg" alt="icon-error">
+                        </div>
+ 
+                        <div class="input-text">
+                            <input type="text" id="email" placeholder="Email Address">
+                            <small>Email Address cannot be empty</small>
+                            <img src="./images/icon-error.svg" alt="icon-error">
+                        </div>
+
+                        <div class="input-text">
+                            <input type="text" id="password" placeholder="Password">
+                            <small>Password cannot be empty</small>
+                            <img src="./images/icon-error.svg" alt="icon-error">
+                        </div>
+
+                        <input class="button" type="submit" value="CLAIM YOUR FREE TRIAL">
+
+                        <small>
+                            By clicking the button you are agreeing to our 
+                            <a href="#">Terms and Services</a>
+                        </small>
+                    </form>
                 </div>
             </div>
         </div>
 
-        <div class="box-container">
-            <div class="box box2">
-                <div class="content">
-                    <img src="images/icon-luxury.svg" width="70px">
-                <h1>SUVs</h1>
-                <p>Take a SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
-                <button class="btn btn2">Learn More</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="box-container">
-            <div class="box box3">
-                <div class="content">
-                    <img src="images/icon-luxury.svg" width="70px">
-                <h1>Luxury</h1>
-                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
-                <button class="btn btn3">Learn More</button>
-                </div>
-            </div>
-        </div>
-         
-    </main>
-
-</body>
-
+        <script src="./script.js"></script>
+    </body>
 </html>
